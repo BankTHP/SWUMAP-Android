@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgwalltest"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".menu.BUS">
+    <!--we create background shape-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/shapebg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:background="#000000"
+            android:elevation="15dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="BUS"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:targetApi="LOLLIPOP" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:elevation="15dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="รถเมล์สาย 11, 23, 58, 60, 72, 93, 99, 113, 206, 512, ปอ.พ. 10 และปอ.พ.23 เข้าซอยข้าง 7-eleven และ CP Freshmart ข้ามสะพานคลองแสนแสบหรือรถเมล์สาย 138, 98, 136 ลงหน้า Q House เดินเข้าลาน SWUNIPLEXหรือลงโรงพยาบาลจักษุรัตนิน เดินเข้าซอยด้านข้างมหาวิทยาลัย
+"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:targetApi="LOLLIPOP" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/QHOUSE"
+                android:text="QHouse"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_margin="5dp"
+                android:textColor="#000000"
+                android:background="@drawable/shapebg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/CP"
+                android:text="CP"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_margin="5dp"
+                android:textColor="#000000"
+                android:background="@drawable/shapebg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/swunow"
+                android:text="swu"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_margin="5dp"
+                android:textColor="#000000"
+                android:background="@drawable/shapebg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgwall"
+    android:textAlignment="center"
+    android:visibility="visible"
+    tools:context=".swuActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="207dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:elevation="16dp"
+        android:inputType="textMultiLine"
+        android:padding="0dp"
+        android:text="คณะวัฒนธรรมสิ่งแวดล้อมและการท่องเที่ยวเชิงนิเวศ์"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/headingfg"
+        app:layout_constraintTop_toTopOf="@+id/headingfg"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/headingfg"
+        android:layout_width="48dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="32dp"
+        android:elevation="16dp"
+        android:padding="0dp"
+        android:text="ชื่อ : "
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/campusnamefg"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="12dp"
+        android:elevation="16dp"
+        android:padding="0dp"
+        android:text="วิทยาเขต : "
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/headingfg"
+        app:layout_constraintTop_toBottomOf="@+id/headingfg"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/campustxt"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:elevation="16dp"
+        android:padding="0dp"
+        android:text="ประสานมิตร"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/campusnamefg"
+        app:layout_constraintStart_toEndOf="@+id/campusnamefg"
+        app:layout_constraintTop_toTopOf="@+id/campusnamefg"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnGPS"
+            android:layout_width="217dp"
+            android:layout_height="117dp"
+            android:layout_marginStart="208dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/websiteBtn"
+            android:layout_width="215dp"
+            android:layout_height="113dp"
+            android:layout_marginEnd="204dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn2"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="-1dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/image_heading"
+        android:layout_width="74dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="44dp"
+        android:background="#FFFFFF"
+        android:scaleType="fitCenter"
+        android:src="@drawable/human"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <fragment
+        android:id="@+id/mapswu"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="365dp"
+        android:layout_height="421dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        map:cameraZoom="18"
+        tools:context=".MapsActivity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

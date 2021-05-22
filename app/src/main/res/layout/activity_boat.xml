@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgwalltest"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".menu.BTS">
+    <!--we create background shape-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/shapebg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:background="#000000"
+            android:elevation="15dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Boat"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:targetApi="LOLLIPOP" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:elevation="15dp"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="ให้ลงท่าเรือ มศว ประสานมิตร \nจะถึง มศว เลย\nราคาแล้วแต่สถานที่ที่ท่านขึ้น"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            tools:targetApi="LOLLIPOP" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/swunow"
+                android:text="SWU"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:layout_margin="5dp"
+                android:textColor="#000000"
+                android:background="@drawable/shapebg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
