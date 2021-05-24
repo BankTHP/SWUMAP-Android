@@ -1,307 +1,401 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
 
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#FEFEFE"
+    android:background="@drawable/bgwalltest"
     android:weightSum="3"
-
-
     android:orientation="vertical">
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="240dp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_weight="1"
-        android:background="@drawable/headder"
-        android:text="SWUMAP"
-        android:textSize="20dp"
-        android:textStyle="bold"></TextView>
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="2"
-        android:alignmentMode="alignMargins"
-        android:columnCount="1"
-        android:rowCount="3"
-        android:padding="20dp">
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CATEGORIES"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="italic"
+            android:textColor="@color/pale_black"
+            android:textAllCaps="true"
+            android:padding="10dp" />
+        <!--car-->
         <androidx.cardview.widget.CardView
-
             android:id="@+id/car"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
-            app:cardMaxElevation="8dp"
-            app:cardCornerRadius="8dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="16dp"
-                android:orientation="horizontal">
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="56dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/roundcar"
-                    />
-                <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00000000"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+                <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Car"
-                    android:layout_gravity="center"
-                    android:textColor="#000000"
-                    android:textSize="15dp"></TextView>
-            </LinearLayout>
+                    android:layout_height="150dp"
+                    android:background="@drawable/regcar"
+                    android:layout_margin="20dp"
+                    >
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CAR"
+                        android:padding="20dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Asok"
+                        android:background="#00000000"
+                        android:padding="20dp"
+                        android:layout_alignParentBottom="true" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="122dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/cat4" />
+            </RelativeLayout>
         </androidx.cardview.widget.CardView>
+        <!--bus-->
         <androidx.cardview.widget.CardView
             android:id="@+id/bus"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
-            app:cardMaxElevation="8dp"
-            app:cardCornerRadius="8dp">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00000000"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/regbus"
+                    android:layout_margin="20dp">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="16dp"
-                android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:padding="25dp"
+                        android:text="BUS"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="#00000000"
+                        android:padding="20dp"
+                        android:text="Asok" />
+
+                </RelativeLayout>
                 <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="56dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/roundbus"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Bus"
-                    android:layout_gravity="center"
-                    android:textColor="#000000"
-                    android:textSize="15dp"></TextView>
-            </LinearLayout>
-
+                    android:layout_width="122dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="-4.5dp"
+                    android:layout_marginLeft="-10dp"
+                    android:src="@drawable/cat5" />
+            </RelativeLayout>
         </androidx.cardview.widget.CardView>
+        <!--bts-->
         <androidx.cardview.widget.CardView
             android:id="@+id/bts"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
-            app:cardMaxElevation="8dp"
-            app:cardCornerRadius="8dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="16dp"
-                android:orientation="horizontal">
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="56dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/roundbts"
-                    />
-                <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00000000"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+                <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="BTS"
-                    android:layout_gravity="center"
-                    android:textColor="#000000"
-                    android:textSize="15dp"></TextView>
-            </LinearLayout>
+                    android:layout_height="150dp"
+                    android:background="@drawable/regbts"
+                    android:layout_margin="20dp"
+                    >
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BTS SUKHUMVIT"
+                        android:textSize="25sp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:padding="20dp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Asok"
+                        android:background="#00000000"
+                        android:padding="20dp"
+                        android:layout_alignParentBottom="true" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="122dp"
+                    android:layout_height="90dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/cat6" />
+            </RelativeLayout>
         </androidx.cardview.widget.CardView>
+        <!--mrt-->
         <androidx.cardview.widget.CardView
             android:id="@+id/mrt"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
-            app:cardMaxElevation="8dp"
-            app:cardCornerRadius="8dp">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00000000"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/regbts"
+                    android:layout_margin="20dp">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="16dp"
-                android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:padding="20dp"
+                        android:text="MRT PETTBURI"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="#00000000"
+                        android:padding="20dp"
+                        android:text="Asok" />
+
+                </RelativeLayout>
                 <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="56dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/roundbts"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="MRT"
-                    android:layout_gravity="center"
-                    android:textColor="#000000"
-                    android:textSize="15dp"></TextView>
-            </LinearLayout>
+                    android:layout_width="122dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="-4.5dp"
+                    android:layout_marginLeft="-10dp"
+                    android:src="@drawable/cat8" />
+            </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
+        <!--arl-->
         <androidx.cardview.widget.CardView
             android:id="@+id/arl"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
-            app:cardMaxElevation="8dp"
-            app:cardCornerRadius="8dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="16dp"
-                android:orientation="horizontal">
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="56dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/roundair"
-                    />
-                <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00000000"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+                <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="ARL"
-                    android:layout_gravity="center"
-                    android:textColor="#000000"
-                    android:textSize="15dp"></TextView>
-            </LinearLayout>
+                    android:layout_height="150dp"
+                    android:background="@drawable/regair"
+                    android:layout_margin="20dp"
+                    >
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AIRPORT LING"
+                        android:textSize="25sp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:padding="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Asok"
+                        android:background="#00000000"
+                        android:padding="20dp"
+                        android:layout_alignParentBottom="true" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="122dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/cat11" />
+            </RelativeLayout>
         </androidx.cardview.widget.CardView>
+        <!--boat-->
         <androidx.cardview.widget.CardView
             android:id="@+id/boat"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
-            app:cardMaxElevation="8dp"
-            app:cardCornerRadius="8dp">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00000000"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/regboat"
+                    android:layout_margin="20dp">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="16dp"
-                android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:padding="20dp"
+                        android:text="PRASANMIT PORT"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="#00000000"
+                        android:padding="20dp"
+                        android:text="Asok" />
+
+                </RelativeLayout>
                 <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="56dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/roundboat"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Boat"
-                    android:layout_gravity="center"
-                    android:textColor="#000000"
-                    android:textSize="15dp"></TextView>
-            </LinearLayout>
-
+                    android:layout_width="122dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="-4.5dp"
+                    android:layout_marginLeft="-10dp"
+                    android:src="@drawable/cat7" />
+            </RelativeLayout>
         </androidx.cardview.widget.CardView>
+        <!--map-->
         <androidx.cardview.widget.CardView
             android:id="@+id/map"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
-            app:cardMaxElevation="8dp"
-            app:cardCornerRadius="8dp">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="16dp"
-                android:orientation="horizontal">
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="56dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/map"
-                    />
-                <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00000000"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+                <RelativeLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Map"
-                    android:layout_gravity="center"
-                    android:textColor="#000000"
-                    android:textSize="15dp"></TextView>
-            </LinearLayout>
+                    android:layout_height="150dp"
+                    android:background="@drawable/regwalk"
+                    android:layout_margin="20dp"
+                    >
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MAP"
+                        android:textSize="25sp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:padding="20dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Asok"
+                        android:background="#00000000"
+                        android:padding="20dp"
+                        android:layout_alignParentBottom="true" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="122dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/map" />
+            </RelativeLayout>
         </androidx.cardview.widget.CardView>
+        <!--quit-->
         <androidx.cardview.widget.CardView
             android:id="@+id/quit"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_rowWeight="1"
-            android:layout_columnWeight="1"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
-            app:cardMaxElevation="8dp"
-            app:cardCornerRadius="8dp">
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#00000000"
+            android:layout_margin="20dp"
+            app:cardElevation="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/regexit"
+                    android:layout_margin="20dp">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="16dp"
-                android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:padding="20dp"
+                        android:text="EXIT FROM APP"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                </RelativeLayout>
                 <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="56dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/ic_baseline_exit_to_app_24"
-                    />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Quit"
-                    android:layout_gravity="center"
-                    android:textColor="#000000"
-                    android:textSize="15dp"></TextView>
-            </LinearLayout>
-
+                    android:layout_width="122dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="-4.5dp"
+                    android:layout_marginLeft="-10dp"
+                    android:src="@drawable/ic_baseline_exit_to_app_24"/>
+            </RelativeLayout>
         </androidx.cardview.widget.CardView>
-        </GridLayout>
 
-</LinearLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>

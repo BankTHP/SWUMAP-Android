@@ -57,17 +57,18 @@ class swuActivity : AppCompatActivity(), OnMapReadyCallback {
 
     }
 
-    override fun onMapReady(p0: GoogleMap?) {
+    override fun onMapReady(googlemap : GoogleMap?) {
         val bundle: Bundle? = intent.extras
         val latvalues = bundle?.getDouble("lat")
         val lonvalues = bundle?.getDouble("lon")
         val heading = bundle!!.getString("heading")
         var swupostiton = LatLng(latvalues!!.toDouble(),lonvalues!!.toDouble())
-        p0?.addMarker(
+        googlemap?.addMarker(
             MarkerOptions()
                 .position(swupostiton)
                 .title(heading.toString())
         )
-        p0?.moveCamera(CameraUpdateFactory.newLatLng(swupostiton))
+        googlemap?.moveCamera(CameraUpdateFactory.newLatLng(swupostiton))
+        googlemap?.setMapType(GoogleMap.MAP_TYPE_HYBRID);
     }
 }
